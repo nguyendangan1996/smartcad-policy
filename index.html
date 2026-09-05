@@ -3,22 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - SMARTCAD</title>
+    <title>Privacy Policy - SMARTCAD BOM</title>
     <style>
-        body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; line-height: 1.6; padding: 0 20px; color: #333; }
-        h1 { color: #1a73e8; }
-        h2 { color: #202124; margin-top: 24px; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; max-width: 860px; margin: 40px auto; line-height: 1.7; padding: 0 24px; color: #202124; }
+        h1 { color: #1a73e8; font-size: 26px; border-bottom: 2px solid #e8eaed; padding-bottom: 12px; }
+        h2 { color: #174ea6; font-size: 19px; margin-top: 28px; }
+        p, li { font-size: 15px; color: #3c4043; }
+        ul { padding-left: 22px; }
+        li { margin-bottom: 10px; }
+        code { background: #f1f3f4; padding: 2px 6px; border-radius: 4px; font-size: 13px; color: #d93025; }
+        .en-box { background: #f8f9fa; border-left: 4px solid #1a73e8; padding: 16px; margin-top: 30px; border-radius: 0 8px 8px 0; }
+        .date { color: #5f6368; font-style: italic; }
     </style>
 </head>
 <body>
-    <h1>Privacy Policy for SMARTCAD</h1>
-    <p>Last updated: September 2026</p>
-    <p>SMARTCAD application is developed to support CAD workflow automation and data processing.</p>
-    <h2>Information Collection and Use</h2>
-    <p>We do not store, share, or sell your personal data. Authentication tokens and permissions are used solely to communicate directly with Google APIs to perform user-requested actions.</p>
-    <h2>Data Protection</h2>
-    <p>Your access credentials are kept secure locally and are never transferred to third-party servers.</p>
-    <h2>Contact Us</h2>
-    <p>If you have any questions regarding this Privacy Policy, please reach out via developer contact email.</p>
+    <h1>CHÍNH SÁCH QUYỀN RIÊNG TƯ (PRIVACY POLICY)</h1>
+    <p class="date">Cập nhật lần cuối: Tháng 09/2026</p>
+    
+    <p>Tiện ích <strong>SMARTCAD BOM</strong> tôn trọng và cam kết bảo vệ quyền riêng tư của người dùng. Chính sách này giải thích cách tiện ích truy cập và sử dụng dữ liệu từ tài khoản Google của bạn.</p>
+    
+    <h2>1. Mục đích sử dụng quyền truy cập Google API</h2>
+    <p>Ứng dụng SMARTCAD BOM yêu cầu truy cập các quyền Google API với mục đích duy nhất là phục vụ các tính năng do người dùng chủ động kích hoạt:</p>
+    <ul>
+        <li><strong>Google Drive API (<code>.../auth/drive.file</code>):</strong> Chỉ truy cập, tạo mới và chỉnh sửa các tệp hoặc thư mục do chính ứng dụng này tạo ra hoặc được người dùng chỉ định (ví dụ: tạo thư mục dự án, tải bản vẽ PDF/STEP lên Drive). Ứng dụng không đọc, không can thiệp vào các tệp cá nhân khác trên Drive của bạn.</li>
+        <li><strong>Google Sheets API (<code>.../auth/spreadsheets</code>):</strong> Dùng để đọc và ghi dữ liệu bảng danh mục vật tư (BOM) vào file Google Sheets của dự án.</li>
+        <li><strong>Thông tin cơ bản (<code>userinfo.email</code>, <code>userinfo.profile</code>):</strong> Dùng để hiển thị email đang kết nối trên giao diện Add-in giúp người dùng nhận biết tài khoản đang làm việc.</li>
+    </ul>
+
+    <h2>2. Lưu trữ và bảo mật dữ liệu</h2>
+    <ul>
+        <li>Ứng dụng không truyền tải bất kỳ dữ liệu thiết kế, danh mục vật tư hay thông tin cá nhân nào về máy chủ riêng của chúng tôi. Dữ liệu chỉ được truyền trực tiếp giữa máy tính của bạn và hệ thống máy chủ của Google thông qua giao thức bảo mật SSL/HTTPS.</li>
+        <li>Ứng dụng không bán, không cho thuê, không chia sẻ dữ liệu của bạn cho bất kỳ bên thứ ba nào.</li>
+    </ul>
+
+    <h2>3. Tuân thủ chính sách Google</h2>
+    <p>Việc sử dụng thông tin nhận được từ Google API của SMARTCAD BOM tuân thủ nghiêm ngặt theo <em>Chính sách dữ liệu người dùng của dịch vụ Google API (Google API Services User Data Policy)</em>, bao gồm các yêu cầu về Sử dụng có giới hạn (Limited Use requirements).</p>
+
+    <div class="en-box">
+        <strong>Google API Disclosure (English summary for Google Verification Team):</strong><br>
+        SMARTCAD BOM only accesses Google Sheets and Google Drive to create project folders, store user-exported CAD drawings, and write BOM tables directly requested by the user. We do not store or share user data to any external servers. The app complies with the Google API Services User Data Policy, including the Limited Use requirements.
+    </div>
 </body>
 </html>
